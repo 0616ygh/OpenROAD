@@ -207,7 +207,7 @@ void IOPlacer::randomPlacement(std::vector<int> pin_indices,
   if (pin_indices.size() > slot_indices.size()) {
     logger_->error(PPL,
                    72,
-                   "Number of pins ({}) exceed number of valid positions ({}).",
+                   "Number of pins ({}) exceed number of valid positions ({}). Please decrease FP_CORE_UTIL or give larger die area.)",
                    pin_indices.size(),
                    slot_indices.size());
   }

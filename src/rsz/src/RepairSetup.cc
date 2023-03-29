@@ -237,7 +237,7 @@ RepairSetup::repairSetup(float setup_slack_margin,
     logger_->info(RSZ, 41, "Resized {} instances.", resize_count_);
   Slack worst_slack = sta_->worstSlack(max_);
   if (fuzzyLess(worst_slack, setup_slack_margin))
-    logger_->warn(RSZ, 62, "Unable to repair all setup violations.");
+    logger_->warn(RSZ, 62, "Unable to repair all setup violations.Maybe increasing the CLOCK_PERIOD can fix it");
   if (resizer_->overMaxArea())
     logger_->error(RSZ, 25, "max utilization reached.");
 }

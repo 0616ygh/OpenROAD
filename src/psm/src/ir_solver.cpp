@@ -151,7 +151,7 @@ void IRSolver::solveIR()
     logger_->warn(utl::PSM,
                   8,
                   "Powergrid is not connected to all instances, therefore the "
-                  "IR Solver may not be accurate. LVS may also fail.");
+                  "IR Solver may not be accurate. LVS may also fail. Please check the power defination in your Verilog");
   }
   const int unit_micron = db_->getTech()->getDbUnitsPerMicron();
   CscMatrix* Gmat = Gmat_->getGMat();

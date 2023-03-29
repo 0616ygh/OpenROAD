@@ -176,7 +176,7 @@ void Opendp::detailedPlacement(int max_displacement_x,
     for (auto inst : placement_failures_) {
       logger_->info(DPL, 35, " {}", inst->getName());
     }
-    logger_->error(DPL, 36, "Detailed placement failed.");
+    logger_->error(DPL, 36, "Detailed placement failed. Maybe increasing the diea area or placement density,or changing placement strategy can solve this problem.");
   }
 }
 

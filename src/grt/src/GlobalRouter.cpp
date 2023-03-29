@@ -293,14 +293,14 @@ void GlobalRouter::globalRoute(bool save_guides)
         logger_->error(
             GRT,
             119,
-            "Routing congestion too high. Check the congestion heatmap "
+            "Routing congestion too high. Decrease placement density or reduce bus widths maybe work. For more infomation, check the congestion heatmap "
             "in the GUI and load {} in the DRC viewer.",
             congestion_file_name_);
       } else {
         logger_->error(
             GRT,
             118,
-            "Routing congestion too high. Check the congestion heatmap "
+            "Routing congestion too high. Decrease placement density or reduce bus widths maybe work. For more infomation, check the congestion heatmap "
             "in the GUI.");
       }
     }
